@@ -19,6 +19,8 @@ async function status(request, response) {
     values: [databaseName],
   });
 
+  console.log(databaseActiveConnectionsResult);
+
   const databaseActiveConnectionsValue =
     databaseActiveConnectionsResult.rows[0].count;
 
